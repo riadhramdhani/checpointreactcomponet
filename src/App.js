@@ -4,12 +4,14 @@ import Profil from './componet/Profil';
 import Fullname from './componet/Fullname';
 import Adresse from './componet/Adresse ';
 
-function App() {
+function App({name}) {
+  
+  
   return (
     <div className="App">
       <Profil/>
       <Adresse/>
-      <Fullname/>
+      <Fullname />
     </div>
   );
 }

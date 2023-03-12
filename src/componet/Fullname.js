@@ -1,9 +1,19 @@
 import React from 'react'
 
-function Fullname() {
+function Fullname({name}) {
+  const handleClick = () => {
+    alert(`The user's name is ${name}.`);
+  };
+  
+
   return (
-    <div><p className='ri'>ramdhani riadh</p></div>
-  )
+    <div>
+      <h1>{name}'s Profile</h1>
+      <button onClick={handleClick}>Show Name</button>
+    </div>
+  );
 }
+
+  
 
 export default Fullname
